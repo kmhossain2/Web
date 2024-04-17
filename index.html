@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="src/js/script.js"></script>
+    <title>Document</title>
+</head>
+<body class="arimo-body">
+    <header class="profile">
+        <img src="src/img/IMG_0647.jpeg">
+        <h1>KAZI MEHERAB HOSSAIN</h1>
+        <small>Programmer</small>
+    </header>
+    <div class="buttons">
+        <a href="src/Kazi_Resume.pdf" download="Kazi_Resume.pdf">
+            <button name="resume-button" class="arimo-body">Resume</button>
+        </a>
+        <button name="contact-button" class="arimo-body" onclick="scroll2contact('contact')">Contact Me</button>
+    </div>
+    <main class="card-container">
+        <div class="infographic">
+            <article>
+                <h2>About Me and Academic Honesty</h2>
+                <p>
+                   I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+No part of this assessment has been copied manually or electronically from any other source 
+(including web sites) except for the information supplied by the WEB222 instructors and / or 
+made available in this assessment for my use. I also declare that no part of this assignment has 
+been distributed to other students.
+                </p>
+                <time><b>Date: </b>April 15, 2024</time>
+            </article>
+            <article>
+                <h2>Basic Information</h2>
+                <div class="basic-info-grid">
+                    <p>
+                        <b>AGE:<br/></b>
+                        <b>EMAIL:<br/></b>
+                        <b>LANGUAGE:<br/></b>
+                        <b>SECTION:<br/></b>
+                        <b>STUDENT ID:<br/></b>
+                        <b>INSTRUCTOR:<br/></b>
+                    </p>
+                    <p>
+                        <span>20<br/></span> 
+                        <span>kmhossain2@myseneca.ca<br/></span> 
+                        <span>English, Bangla<br/></span> 
+                        <span>ZCC<br/></span> 
+                        <span>118640234<br/></span> 
+                        <span>Mark Meritt<br/></span> 
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <main class="card-container">
+        <h1>Education</h1>
+        <div class="edu-card">
+            <article class="edu-card-one">
+                <span>2023 - 2025(expected)<br/></span>
+                <h2>Ontario College Diploma</h2>
+            </article>
+            <article class="edu-card-two">
+                <h2>Ontario College Diploma</h2>
+                <h3>SENECA COLLEGE</h3>
+                <p>
+                    Under the supervision of Professor Mark Meritt
+                </p>
+            </article>
+        </div>
+    </main>
+    <main class="card-container">
+        <h1>Contact Me</h1>
+        <section id="contact">
+            <form name="contactForm" action="https://httpbin.org/post" method="POST" id="contactForm">
+                <div id="left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Kazi hossain" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="email@domain.com" required>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" id="postalCode" name="postalCode" pattern="[a-zA-Z][0-9][a-zA-Z] [0-9][a-zA-Z][0-9]" placeholder="A1B 2C3" required>
+                    <fieldset id="inquiryType">
+                        <legend>Inquiry Type</legend>
+                        <div>
+                            <input type="radio" id="question" name="type" value="question" checked>
+                            <label for="question">Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="comment" name="type" value="comment">
+                            <label for="comment">Comment</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="hiring" name="type" value="hiring">
+                            <label for="hiring">Hiring</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Send Message">
+                </div>
+                <div id="right">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="message" rows="6" required></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

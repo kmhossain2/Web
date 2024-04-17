@@ -1,0 +1,193 @@
+/* Fonts */
+.arimo-body {
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Profile Section */
+  .profile {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .profile small {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    width: 150px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #555;
+    width: 170px;
+  }
+  
+  /* Infographic */
+  .infographic {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #222;
+  }
+  
+  .infographic article {
+    padding: 10px;
+    color: #ddd;
+  }
+  .basic-info-grid {
+    display: grid;
+    grid-template-columns: auto 280.91px;
+    row-gap: 10px;
+}
+
+.basic-info-grid div {
+    display: flex;
+    align-items: center;
+}
+
+.basic-info-grid dt {
+    font-weight: bold;
+    width: 100px; /* Adjust width for description terms */
+}
+
+.basic-info-grid dd {
+    margin-left: 10px; /* Add spacing between dt and dd */
+}
+
+/* Set specific dimensions for each grid cell */
+.basic-info-grid div {
+    width: 280.91px;
+    height: 160.8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+  
+  /* Education Card */
+  .card-container {
+    max-width: 866.4px; /* Set maximum width for the card container */
+    margin: 0 auto;
+}
+
+.edu-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%; /* Take up full width of the container */
+    height: 275.43px; /* Set height of the card container */
+    margin-top: 20px;
+}
+
+.edu-card-one,
+.edu-card-two {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #444;
+    color: white;
+}
+
+.edu-card-two {
+    background-color: #333;
+    color: #ddd;
+}
+
+  
+  /* Form */
+#contactForm {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 800px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #222;
+  }
+  
+  #left {
+    padding: 10px;
+  }
+  
+  #right {
+    padding: 10px;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  textarea,
+  fieldset {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: white; /* Text color */
+    background-color: #444; /* Background color */
+  }
+  
+  /* Labels */
+  label {
+    color: #ddd; /* Label text color */
+  }
+  
+  /* Submit Button */
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
